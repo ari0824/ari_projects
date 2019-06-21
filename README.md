@@ -8,6 +8,7 @@ Takes CSV file with customer addresses and scrapes American Census Finder websit
 * output.csv - example output
 * ari_notes-census_finder - random notes
 * census_finder_webscraper.ipynb - Jupyter notebook code
+* census_finder_webscraper.py - Python version of code
 
 ## 2. murderpedia *(I have a True Crime addiction and want to build things...)*:
 Pulls data from muderpedia.org website.
