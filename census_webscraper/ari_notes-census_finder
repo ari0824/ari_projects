@@ -1,16 +1,9 @@
-1. had to reinstall pandas
-    Run: pip3 install pandas
-    
-2. Had to change User-Agent from:
+1. Had to change User-Agent from:
     req = Request(start_url, headers={'User-Agent':'Mozilla/5.0'})
 
     To:
     req = Request(start_url, headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'})
     CREDIT:https://towardsdatascience.com/how-to-web-scrape-with-python-in-4-minutes-bc49186a8460
 
-3. Library for looking up stuff
+2. Library for looking up stuff
     pip install pandas-lookup
-
-4. SCM & Github
-    Install git: https://sourceforge.net/projects/git-osx-installer/
-    x-code install 
