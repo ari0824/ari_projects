@@ -11,7 +11,7 @@ Takes CSV file with customer addresses and scrapes American Census Finder websit
 * census_finder_webscraper.py - Python version of code
 
 ## 2. murderpedia *(I have a True Crime addiction and want to build things...)*:
-Pulls data from muderpedia.org website.
+I'm a pretty huge True Crime addict. Like listening to podcasts and have ID channel on while I work kind of addict. Wanted to try my hand at pulling together a project from start to finish, but using data I'd find interesting, so here we are. Code currently pulls data from muderpedia.org website. Lots of stuff to do still..
 ### To-Do: 
 * Push data to a database
 * conduct analysis
