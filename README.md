@@ -1,7 +1,7 @@
 # ari_projects
 Projects I've worked on or am currently developing. Usually for fun, sometimes for an actual purpose.
 
-## 1. census_webscraper *(practice with BeautifulSoup and Pandas)*:
+## 1. census_webscraper *(built with BeautifulSoup and Pandas)*:
 Takes CSV file with customer addresses and scrapes American Census Finder website to find "Place Within State" or Authority Having Jusidiction associated to that address
 ### Files:
 * fake_address_input.csv - example input
