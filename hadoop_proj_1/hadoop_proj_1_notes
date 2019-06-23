@@ -1,5 +1,8 @@
 Source: https://medium.com/@rrfd/your-first-map-reduce-using-hadoop-with-python-and-osx-ca3b6f3dfe78
 
+TO-DO:
+USE LAMDBDA INSTEAD
+
 1. Include following at top of file:
     #!/usr/bin/env python
 
