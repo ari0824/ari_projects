@@ -1,0 +1,50 @@
+Source: https://medium.com/@rrfd/your-first-map-reduce-using-hadoop-with-python-and-osx-ca3b6f3dfe78
+
+1. Include following at top of file:
+    #!/usr/bin/env python
+
+2. before executing code run, in folder with python files: 
+    chmod +x mapper.py
+    chmod +x reducer.py
+3. test output locally
+    cat daily.csv|python mapper.py|python reducer.py
+
+4. Installed hadoop:
+    http://hanslen.me/2018/01/19/How-to-install-Hadoop-on-macOS-High-Sierra/
+
+---- HADOOP
+
+1. hstart
+2. create hdfs 
+3. move data to hdfs navigate to /usr/local/Cellar/hadoop/3.1.2
+    hdfs dfs -put /Users/arideltoro/Desktop/ari_projects/hadoop_proj_1/daily.csv daily
+
+4. check if file exists:
+    hdfs dfs -ls /daily
+
+5. execute mapred job: navigate to /usr/local/Cellar/hadoop/3.1.2
+
+bin/hadoop jar /usr/local/Cellar/hadoop/3.1.2/libexec/share/hadoop/tools/lib/hadoop-*streaming*.jar \
+-file <full path to file>/mapper.py \
+-mapper "python mapper.py" \
+-file <full path to file>/reducer.py  \
+-reducer "python reducer.py"  \
+-input daily/daily.csv \
+-output daily/output
+
+
+5a. Check full path in terminal: pwd
+
+6. Delete output if running again:
+    hadoop fs -rm -r /user/arideltoro/daily/output
+
+7. Check output:
+    hdfs dfs -cat daily/output/*
+
+
+-----Changes to note:
+
+-Original code was built to for python, I had python 3 on server. Fixed code by changing from "print" to "print ()"
+-python path wasn't correct, had to Change
+
+
