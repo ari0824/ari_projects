@@ -109,3 +109,25 @@ def predict_sequences_multiple(model, data, window_size, prediction_len):
             curr_frame = np.insert(curr_frame, [window_size-1], predicted[-1], axis=0)
         prediction_seqs.append(predicted)
     return prediction_seqs
+
+
+def load_data_c(stock, seq_len):
+    amount_of_features = len(stock.columns)
+    data = stock.as_matrix() #pd.DataFrame(stock)
+    sequence_length = seq_len + 1
+    result = []
+    for index in range(len(data) - sequence_length):
+        result.append(data[index: index + sequence_length])
+
+    result = np.array(result)
+    row = round(0.9 * result.shape[0])
+    train = result[:int(row), :]
+    x_train = train[:, :-1]
+    y_train = train[:, -1][:,-1]
+    x_test = result[int(row):, :-1]
+    y_test = result[int(row):, -1][:,-1]
+
+    x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], amount_of_features))
+    x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], amount_of_features))  
+
+    return [x_train, y_train, x_test, y_test]

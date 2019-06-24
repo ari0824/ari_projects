@@ -1,0 +1,18 @@
+source: https://github.com/etai83/lstm_stock_prediction/blob/master/.ipynb_checkpoints/GOOGLE%20stock%20prediction-checkpoint.ipynb
+
+reading list:
+    https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/
+    Implement train v. test error. Test error < train = overfitting
+
+    https://www.kaggle.com/thousandvoices/simple-lstm/code
+    Implement prediction on test set 
+    
+    https://datascience.stackexchange.com/questions/14581/when-to-use-gru-over-lstm
+    look into GRUs
+
+    https://machinelearningmastery.com/how-to-develop-lstm-models-for-multi-step-time-series-forecasting-of-household-power-consumption/
+    Walk-forward validation: Feeding predictions back into LSTM
+1. pip install pandas_datareader
+
+2. setup cufflinks
+    https://plot.ly/python/getting-started/
