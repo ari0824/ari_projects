@@ -1,16 +1,7 @@
 # ari_projects
 Projects I've worked on or am currently developing. Usually for fun, sometimes for an actual purpose.
 
-## 1. census_webscraper *(built with BeautifulSoup and Pandas)*:
-Takes CSV file with customer addresses and scrapes American Census Finder website to find "Place Within State" or Authority Having Jusidiction associated to that address
-### Files:
-* fake_address_input.csv - example input
-* output.csv - example output
-* ari_notes-census_finder - random notes
-* census_finder_webscraper.ipynb - Jupyter notebook code
-* census_finder_webscraper.py - Python version of code
-
-## 2. hadoop_proj_1 *(Needed to excercise my hadoop muscles again)*:
+## 1. hadoop_proj_1 *(Needed to excercise my hadoop muscles again)*:
 I've previously coded hadoop projects in Java, so I wanted to try implementing a mapred job in python. Referenced: https://medium.com/@rrfd/your-first-map-reduce-using-hadoop-with-python-and-osx-ca3b6f3dfe78
 Ran into some issues with version mismatch but was able to resolve.
 ### Files:
